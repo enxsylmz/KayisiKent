@@ -1,0 +1,48 @@
+.company-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.company-links img {
+    width: 300px; /* Resim genişliği */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    
+}
+
+.company-yatay img:hover {
+    transform: scale(1.1); /* Hover olduğunda büyütme efekti */
+}
+
+.company-yatay {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.company-yatay img {
+    width: 300px; /* Resim genişliği */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    
+}
+
+.company-yatay img:hover {
+    transform: scale(1.1); /* Hover olduğunda büyütme efekti */
+}

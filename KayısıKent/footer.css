@@ -1,0 +1,135 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Sayfanın en az 100% yükseklik almasını sağlar */
+    font-family: 'Open Sans', sans-serif; /* Open Sans yazı tipi */
+}
+
+.container {
+    max-width: 1200px; /* Maksimum genişlik */
+    margin: 0 auto; /* Ortala */
+    padding: 0 20px; /* Yatay padding */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Logo ve menü arasında boşluk bırakır */
+    align-items: center; /* Dikey ortalama */
+    padding: 10px 0; /* Dikey padding */
+    background: rgba(212, 175, 40, 0.7); /* Şeffaf arka plan */
+    width: 100%; /* Tam genişlik */
+    position: fixed; /* Sayfanın üstünde sabit kalması için */
+    top: 0; /* Üstte görünmesi için */
+    left: 0; /* Sol taraf yapışık */
+    right: 0; /* Sağ taraf yapışık */
+    z-index: 1000; /* Diğer öğelerin üzerinde görünmesi için */
+}
+
+.background-image {
+    position:fixed; /* Arka planda sabit kalması için */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    ;
+    background: url('resimler/reklam/arkplan1.jpg') no-repeat center center; /* Arka plan resmi */
+    background-size:cover; /* Resmi tüm alana yay */
+    z-index: -1; /* Arka planda kalması için */
+    opacity: 0.3; /* Şeffaflık */
+}
+
+.content-area {
+    flex: 1; /* İçeriğin büyüdüğünde footer'ın aşağıda kalmasını sağlar */
+    display: flex; /* Yana yana yerleştirmek için flex kullanıyoruz */
+    justify-content: space-between; /* Alanları dağıtıyoruz */
+    margin: 20px; /* Etrafına boşluk ekliyoruz */
+    margin-top: 80px; /* Navbar yüksekliğine göre yukarıdan boşluk ekliyoruz */
+}
+
+.main-box, .sidebar {
+ 
+        margin-top: 65px;
+        margin-right: 80px;
+        
+    background-color: white; /* Beyaz arka plan */
+    border-radius: 10px; /* Yuvarlak köşeler */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölgelendirme efekti */
+    padding: 20px; /* İçerik için boşluk */
+}
+
+.main-box {
+    flex: 3; /* Ana içerik alanı için esneklik */
+    margin-right: 20px; /* Sağdan boşluk */
+}
+
+.sidebar {
+    flex: 1; /* Yan içerik alanı için esneklik */
+}
+
+/* Footer Ayarları */
+footer {
+    background-color: #333; /* Koyu gri */
+    color: #fff; /* Beyaz yazı rengi */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%; /* Tam genişlik */
+    
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #fff; /* Beyaz yazı rengi */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.link-box {
+
+    background-color: #ecc22b; /* Açık gri arka plan */
+    border: 1px solid #ccc; /* Gri kenar */
+    border-radius: 10px; /* Yuvarlak köşeler */
+    padding: 1px; /* İçerik için boşluk */
+    margin: 10px 0; /* Üst ve alt boşluk */
+    text-align: center; /* Ortala */
+    transition: background-color 0.3s; /* Hover efekti için geçiş */
+}
+
+.link-item {
+    font-size: 18px;
+    display: block; /* Tıklanabilir alanı kutunun tamamına yay */
+    
+    min-width: fit-content;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none; /* Alt çizgi yok */
+    color: #333; /* Koyu metin rengi */
+    font-weight: bold; /* Kalın yazı */
+}
+
+.link-box:hover {
+    background-color: #e2e2e2; /* Hover rengi */
+}

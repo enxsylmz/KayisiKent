@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href=
+    "resimler/reklam/siteicon.png"
+            type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        .background-image {
+    position:fixed; /* Arka planda sabit kalması için */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    ;
+    background: url('resimler/reklam/arkplan1.jpg') no-repeat center center; /* Arka plan resmi */
+    background-size:cover; /* Resmi tüm alana yay */
+    z-index: -1; /* Arka planda kalması için */
+    opacity: 0.3; /* Şeffaflık */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="anasayfa.html"><img src="resimler/reklam/seffasss1.png" alt=""></a>
+            </div>
+            <ul class="menu">
+                <li><a href="anasayfa.html" >Anasayfa</a></li>
+                <li>
+                    <a href="malatya_tarihi.html">Malatya Tarihi</a>
+                    <ul class="dropdown">
+                        <li><a href="malatya_tarihcesi.html">Malatya'nın Tarihçesi</a></li>
+                        <li><a href="unlu_malatyalilar.html">Ünlü Malatyalılar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="kultur.html">Kültür</a>
+                    <ul class="dropdown">
+                        <li><a href="yemek_kulturu.html">Yemek Kültürü</a></li>
+                        <li><a href="dugun_gelenekleri.html">Düğün Gelenekleri</a></li>
+                        <li><a href="dogal_harikalar.html">Doğa Harikaları</a></li>
+                        <li><a href="muzeler.html">Müzeler</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="turizm.html">Turizm</a>
+                    <ul class="dropdown">
+                        <li><a href="oteller.html">Oteller</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="iletisim.html" class="active">İletişim</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Navbar Sonu -->
+
+    <!-- Arka Plan Resmi -->
+
+    <div class="background-image"></div>
+
+    <!-- İletişim Sayfası Başlangıcı -->
+    <div class="content-area">
+        <div class="contact-info">
+            <h3>İletişim</h3>
+            <p>Bize ulaşmak için aşağıdaki iletişim bilgilerini kullanabilirsiniz:</p>
+            <ul>
+                <li><strong>Telefon:</strong> +90 123 456 7890</li>
+                <li><strong>E-posta:</strong> info@kayisikent.com</li>
+                <li><strong>Adres:</strong> Malatya, Türkiye</li>
+            </ul>
+        </div>
+
+        <div class="contact-form">
+            <h4>İletişim Formu</h4>
+            <form action="#" method="post">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- İletişim Sayfası Sonu -->
+
+    <!-- Footer Başlangıcı -->
+    <footer>
+        <div class="footer-content">
+            <p> © Hakları saklıdır. KayısıYazılım tarafından yapılmıştır.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/enxsylmaz/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/enxs.ylmz/" target="_blank">Instagram</a>
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Sonu -->
+</body>
+</html>

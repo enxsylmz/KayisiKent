@@ -1,0 +1,70 @@
+/* Blog CSS */
+h2{
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    margin-bottom: 10px;
+    
+}   
+h3 {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 330px; 
+    height: 3px; 
+    background-color: #f39c12; 
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6; 
+    margin-bottom: 25px; 
+
+}
+
+.content-area {
+    display: flex; /* Yana yana yerleştirmek için flex kullanıyoruz */
+    flex-wrap: wrap; /* Taşan öğeleri bir alt satıra geçir */
+    justify-content: flex-start; /* Başlangıçtan itibaren diz */
+    margin: 20px; /* Etrafına boşluk ekliyoruz */
+}
+
+.main-box {
+    margin-top: 65px;
+    
+    margin-right: 20px; 
+    margin-left: 80px;
+}
+
+/* Resim Kutuları */
+.image-box {
+    
+    display: inline-block;
+    width: 400px; 
+    height: 250px; 
+    overflow: hidden; /* Taşan kısımları gizle */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölgelendirme efekti */
+    margin:   10px; 
+    position: relative; /* Konum ayarı */
+}
+
+.image-box img {
+    
+    width: 100%;
+    height: 100%; /* Kutunun boyutuna göre ayarla */
+    object-fit: cover; /* Resmin taşmasını engelle */
+}
+/**.image-box:hover {
+    z-index: 1;
+    transform: scale(1.3); /* Hover olduğunda büyütme efekti 
+}*/

@@ -1,0 +1,130 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Arka Plan Resmi */
+.background-image {
+    background-image: url('resimler/reklam/arkaplannnnn.jpg'); /* Arka plan resminizi buraya ekleyin */
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/* İletişim İçerik Alanı */
+.content-area {
+    display:flow-root;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    height: 5px;
+    margin: 80px auto;
+    margin-bottom: 60px;
+    margin-top: 90px;
+    padding: 25px;
+    padding-bottom: 1px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* İletişim Bilgileri */
+.contact-info {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-info h3 {
+    font-size: 28px;
+    padding-bottom: 8px;
+    color: #333;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+/* İletişim Formu */
+.contact-form {
+    width: 100%;
+    
+    margin-bottom: 50px;
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+.contact-form h4 {
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding:    1%;
+    background-color: #ff8c00;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #cc7000;
+}
+.image-box {
+
+    
+    
+    display: inline-block;
+    width: 90%; /* Kutunun genişliği */
+    height: 250px; /* Kutunun yüksekliği */
+    overflow: hidden; /* Taşan kısımları gizle */
+    border-radius: 10px; /* Yuvarlak köşeler */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölgelendirme efekti */
+    margin:   20px; /* Etrafına boşluk ekliyoruz */
+    position:relative; /* Konum ayarı */
+}
+
+.image-box img {
+    
+    width: 100%;
+    height: 100%; /* Kutunun boyutuna göre ayarla */
+    object-fit: cover; /* Resmin taşmasını engelle */
+}
